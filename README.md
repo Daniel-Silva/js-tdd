@@ -26,13 +26,16 @@ A ideia principal deste repositório é armazenar o conteúdo do curso JS com TD
 │   └── *
 │       └── *
 ├── .gitignore
+├── CONTRIBUTING.md
 ├── LICENSE.md
 ├── README.md
 └── package.json
 ```
 
-## Creating your Component
-
 ## License
 
 [MIT License](https://github.com/Daniel-Silva/js-tdd/blob/master/LICENSE) @ [Daniel Silva](https://github.com/Daniel-Silva)
+
+## Perfil do LinkedIn 
+
+* [Linkedin](https://www.linkedin.com/in/daniel-silva-852306ab/)

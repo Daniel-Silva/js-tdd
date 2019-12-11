@@ -15,16 +15,6 @@ A ideia principal deste repositório é armazenar o conteúdo do curso JS com TD
 ```sh
 ├── src
 │   └── main.js
-├── *
-│   └── *
-├── *
-│   ├── *
-│   └── *
-├── *
-│   ├── *
-│   │   └── *
-│   └── *
-│       └── *
 ├── .eslintrc.json
 ├── .gitignore
 ├── CONTRIBUTING.md

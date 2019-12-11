@@ -25,10 +25,12 @@ A ideia principal deste repositório é armazenar o conteúdo do curso JS com TD
 │   │   └── *
 │   └── *
 │       └── *
+├── .eslintrc.json
 ├── .gitignore
 ├── CONTRIBUTING.md
 ├── LICENSE.md
 ├── README.md
+├── package-lock.json
 └── package.json
 ```
 

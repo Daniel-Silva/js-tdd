@@ -14,7 +14,11 @@ A ideia principal deste repositório é armazenar o conteúdo do curso JS com TD
 
 ```sh
 ├── src
+│   ├── 12-escopo.js
+│   ├── 16-arrowFunction.js
+│   ├── 17-arrowFunction#2.js
 │   └── main.js
+│  
 ├── .eslintrc.json
 ├── .gitignore
 ├── CONTRIBUTING.md

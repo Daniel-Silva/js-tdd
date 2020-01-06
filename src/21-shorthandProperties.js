@@ -1,17 +1,17 @@
 //Shorthand Properties
 
-let firstName = 'Daniel'
-let surname = 'Silva'
-let age = 32
+let firstName = 'Daniel';
+let surname = 'Silva';
+let age = 32;
 
 const person = {
-    firstName,
-    surname,
-    age,
+	firstName,
+	surname,
+	age,
 
-    hello() {
-        console.log('Hello')
-    }
-}
+	hello() {
+		console.log('Hello');
+	}
+};
 
-console.log(person, person.hello())
+console.log(person, person.hello());

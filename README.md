@@ -17,6 +17,19 @@ A ideia principal deste repositório é armazenar o conteúdo do curso JS com TD
 │   ├── 12-escopo.js
 │   ├── 16-arrowFunction.js
 │   ├── 17-arrowFunction#2.js
+│   ├── 19-templateLiteralHTML.js
+│   ├── 20-taggedTemplate.js
+│   ├── 21-shorthandProperties.js
+│   ├── 23-newMethodString.js
+│   ├── 24-arrayFrom.js
+│   ├── 25-arrayOf.js
+│   ├── 26-arrayFindAndFindIndex.js
+│   ├── 27-fill.js
+│   ├── 28-destructuring.js
+│   ├── 29-destructuring#2.js
+│   ├── 30-destructuring#3.js
+│   ├── 31-spread.js
+│   ├── 32-spread#2.js
 │   └── main.js
 │  
 ├── .eslintrc.json

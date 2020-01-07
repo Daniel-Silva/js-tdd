@@ -1,6 +1,7 @@
 let defer = new Promise((resolve, reject) => {
 	setTimeout(() => {
-		if (true) {
+		let state = true;
+		if (state) {
 			resolve('Hello! It works');
 		} else {
 			reject('Error!');
@@ -10,9 +11,9 @@ let defer = new Promise((resolve, reject) => {
 
 defer.then((data) => console.log(data));
 
-const fetch = require('node-fetch');
+//const fetchs = require('node-fetch');
 
-let clubs = fetch('https://api.cartolafc.globo.com/mercado/destaques');
+var clubs = fetch('https://api.cartolafc.globo.com/mercado/destaques');
 
 clubs
 	.then((data) => data.json())

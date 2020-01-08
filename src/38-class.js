@@ -13,7 +13,7 @@ class Animal {
 	}
 
 	get name() {
-		console.log('My name is Jake!');
+		return 'My name is Jake!';
 	}
 
 	set nickname(nick) {

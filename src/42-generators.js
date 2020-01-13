@@ -25,7 +25,8 @@ function* generator() {
 const g = generator(); // Um objeto g é construído usando a função construtora generator
 console.log(typeof g[Symbol.iterator] === 'function');
 
-while (true) {
+let bool = true;
+while (bool) {
 	let item = g.next();
 	if (item.done) {
 		break;

@@ -30,6 +30,17 @@ A ideia principal deste repositório é armazenar o conteúdo do curso JS com TD
 │   ├── 30-destructuring#3.js
 │   ├── 31-spread.js
 │   ├── 32-spread#2.js
+│   ├── 33-restParams.js
+│   ├── 34-promises.js
+│   ├── 36-promises#2.js
+│   ├── 37-heranca.js
+│   ├── 38-class.js
+│   ├── 39-class#2.js
+│   ├── 40-symbols.js
+│   ├── 41-iteratorEinterables.js
+│   ├── 42-generators.js
+│   ├── 43-generators#2.js
+│   ├── 44-proxy.js
 │   └── main.js
 │  
 ├── .eslintrc.json

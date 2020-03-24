@@ -12,3 +12,9 @@ const data = {
 //Destructuring
 const { firstName, surname, age } = data;
 console.log(firstName, surname, age);
+
+// OU
+
+const { instagram: insta } = data.social;
+
+console.log(insta);

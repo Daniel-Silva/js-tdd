@@ -11,15 +11,8 @@ let defer = new Promise((resolve, reject) => {
 
 defer.then((data) => console.log(data));
 
-// const fetchs = require('node-fetch');
+const fetchs = require('node-fetch');
 
-var clubs = fetch('https://api.cartolafc.globo.com/mercado/destaques');
+var clubs = fetchs('https://jsonmock.hackerrank.com/api/movies/search/?Title=substr');
 
-clubs
-	.then((data) => data.json())
-	.then((data) =>
-		data.map((atleta) => {
-			console.log(`Nome: ${atleta.Atleta.nome} | Escalações: ${atleta.escalacoes} | Clube: ${atleta.clube}`);
-		})
-	)
-	.catch((error) => console.log(error));
+clubs.then((data) => data.json()).then((data) => console.log(data)).catch((error) => console.log(error));

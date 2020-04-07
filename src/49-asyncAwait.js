@@ -5,10 +5,10 @@ async function getZipCode() {
 	// 	.then((data) => console.log(data))
 	// 	.catch((error) => console.log(error));
 
-	const fetchs = require('node-fetch');
-	const response = await fetchs('https://viacep.com.br/ws/08690015/json/');
+	// const fetchs = require('node-fetch');
+	const response = await fetch('https://viacep.com.br/ws/08690015/json/');
 	const data = await response.json();
 
-	console.log(data);	
+	console.log(data);
 }
 getZipCode();

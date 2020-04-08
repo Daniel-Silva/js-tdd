@@ -1,34 +1,37 @@
 {
-  "name": "js-tdd",
-  "version": "1.0.0",
-  "description": "Nossa biblioteca do curso de JS com TDD na prática",
-  "main": "index.js",
-  "scripts": {
-    "prepush": "npx eslint ./src/*.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Daniel-Silva/js-tdd.git"
-  },
-  "keywords": [
-    "js",
-    "tdd",
-    "library"
-  ],
-  "author": "Daniel Silva <dani3l.dxp@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Daniel-Silva/js-tdd/issues"
-  },
-  "homepage": "https://github.com/Daniel-Silva/js-tdd#readme",
-  "devDependencies": {
-    "eslint": "^6.7.2",
-    "eslint-config-node": "^4.0.0",
-    "eslint-config-prettier": "^6.7.0",
-    "eslint-plugin-node": "^10.0.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "husky": "^3.1.0",
-    "prettier": "^1.19.1"
-  }
+	"name": "js-tdd",
+	"version": "1.0.0",
+	"description": "Nossa biblioteca do curso de JS com TDD na prática",
+	"main": "index.js",
+	"scripts": {
+		"build": "./node_modules/.bin/webpack --colors --progress",
+		"watch": "npm run build -- --watch",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Daniel-Silva/js-tdd.git"
+	},
+	"keywords": [ "js", "tdd", "library" ],
+	"author": "Daniel Silva <dani3l.dxp@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Daniel-Silva/js-tdd/issues"
+	},
+	"homepage": "https://github.com/Daniel-Silva/js-tdd#readme",
+	"devDependencies": {
+		"babel-core": "^6.26.3",
+		"babel-loader": "^7.1.5",
+		"babel-preset-es2015-native-modules": "^6.9.4",
+		"eslint": "^6.7.2",
+		"eslint-config-node": "^4.0.0",
+		"eslint-config-prettier": "^6.7.0",
+		"eslint-plugin-node": "^10.0.0",
+		"eslint-plugin-prettier": "^3.1.2",
+		"husky": "^3.1.0",
+		"prettier": "^1.19.1",
+		"ramda": "^0.27.0",
+		"webpack": "^4.42.1",
+		"webpack-cli": "^3.3.11"
+	}
 }

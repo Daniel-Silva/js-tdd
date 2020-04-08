@@ -1,7 +1,7 @@
 async function getZipCode(ceps) {
 	try {
-		const fetchs = require('node-fetch');
-		const promises = ceps.map((cep) => fetchs(`https://viacep.com.br/ws/${cep}/json/`).then((r) => r.json()));
+		//const fetchs = require('node-fetch');
+		const promises = ceps.map((cep) => fetch(`https://viacep.com.br/ws/${cep}/json/`).then((r) => r.json()));
 		const adresess = await Promise.all(promises);
 		console.log(adresess);
 	} catch (err) {

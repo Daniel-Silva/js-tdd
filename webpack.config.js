@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
 	mode: 'development',
@@ -18,6 +19,17 @@ module.exports = {
 					presets: [ [ 'es2015', { modules: false } ] ]
 				}
 			}
+		]
+	},
+	optimization: {
+		minimizer: [
+			new UglifyJsPlugin({
+				sourceMap: true,
+				compress: {
+					warnings: false
+				},
+				output: { comments: false }
+			})
 		]
 	}
 };

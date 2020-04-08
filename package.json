@@ -12,7 +12,11 @@
 		"type": "git",
 		"url": "git+https://github.com/Daniel-Silva/js-tdd.git"
 	},
-	"keywords": [ "js", "tdd", "library" ],
+	"keywords": [
+		"js",
+		"tdd",
+		"library"
+	],
 	"author": "Daniel Silva <dani3l.dxp@gmail.com>",
 	"license": "MIT",
 	"bugs": {
@@ -31,6 +35,8 @@
 		"husky": "^3.1.0",
 		"prettier": "^1.19.1",
 		"ramda": "^0.27.0",
+		"uglifyjs": "^2.4.11",
+		"uglifyjs-webpack-plugin": "^2.2.0",
 		"webpack": "^4.42.1",
 		"webpack-cli": "^3.3.11"
 	}

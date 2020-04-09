@@ -1,5 +1,5 @@
 const webpack = require('webpack');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+// const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
 	mode: 'development',
@@ -20,16 +20,16 @@ module.exports = {
 				}
 			}
 		]
-	},
-	optimization: {
-		minimizer: [
-			new UglifyJsPlugin({
-				sourceMap: true,
-				compress: {
-					warnings: false
-				},
-				output: { comments: false }
-			})
-		]
 	}
+	// optimization: {
+	// 	minimizer: [
+	// 		new UglifyJsPlugin({
+	// 			sourceMap: true,
+	// 			compress: {
+	// 				warnings: false
+	// 			},
+	// 			output: { comments: false }
+	// 		})
+	// 	]
+	// }
 };

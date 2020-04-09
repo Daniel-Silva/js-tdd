@@ -4,10 +4,10 @@ const webpack = require('webpack');
 module.exports = {
 	mode: 'development',
 	entry: {
-		filename: './src/Modulos/app.js'
+		filename: './src/Mod#2 - Modules Webpack/app.js'
 	},
 	output: {
-		filename: './src/Modulos/build.js'
+		filename: './build.js'
 	},
 	module: {
 		rules: [

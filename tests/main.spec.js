@@ -1,29 +1,30 @@
 describe('Main', function() {
 	describe('Method A', function() {
 		context('Case A', function() {
-			it('sthe sum of two integer values should happen', function() {
-				// espera que aconteça
-				// entra de dados / método sum(2,2)
-				// espera retornar (4) => true
-				// ou (3) => broken test
-				throw new Error('just on error');
+			let arr;
+			// roda UMA VEZ antes do bloco
+			before(function() {});
+			// roda UMA VEZ depois do bloco
+			after(function() {});
+			// roda todas as vezes, antes de CADA bloco
+			beforeEach(function() {
+				arr = [ 1, 2, 3 ];
 			});
-		});
+			// roda todas as vezes, depois de CADA bloco
+			afterEach(function() {});
 
-		context('Case B', function() {
-			it('should happen blablablah', function() {
-				// espera que aconteça
-				// entra de dados / método sum(2,2)
-				// espera retornar (4) => true
-				// ou (3) => broken test
-				throw new Error('just on error');
+			it('should have a size of 4 when push another value to the array', function() {
+				arr.push(4);
+				console.log(arr.length);
 			});
 
-			it('should happen mimimi', function() {
-				// espera que aconteça
-				// entra de dados / método sum(2,2)
-				// espera retornar (4) => true
-				// ou (3) => broken test
+			it('should have a size of 2 when pop a value from the array', function() {
+				arr.pop();
+				console.log(arr.length);
+			});
+
+			it('should remove 3 when use pop in the array', function() {
+				console.log(arr.pop() === 3);
 			});
 		});
 	});

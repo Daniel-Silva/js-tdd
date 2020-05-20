@@ -6,17 +6,14 @@
 	"scripts": {
 		"build": "./node_modules/.bin/webpack --colors --progress",
 		"watch": "npm run build -- --watch",
-		"test": "./node_modules/.bin/mocha tests/**/*.spec.js"
+		"test": "./node_modules/.bin/mocha tests/**/*.spec.js",
+		"test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --watch"
 	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/Daniel-Silva/js-tdd.git"
 	},
-	"keywords": [
-		"js",
-		"tdd",
-		"library"
-	],
+	"keywords": [ "js", "tdd", "library" ],
 	"author": "Daniel Silva <dani3l.dxp@gmail.com>",
 	"license": "MIT",
 	"bugs": {

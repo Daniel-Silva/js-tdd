@@ -1,31 +1,32 @@
-describe('Main', function() {
-	describe('Method A', function() {
-		context('Case A', function() {
-			let arr;
-			// roda UMA VEZ antes do bloco
-			before(function() {});
-			// roda UMA VEZ depois do bloco
-			after(function() {});
-			// roda todas as vezes, antes de CADA bloco
-			beforeEach(function() {
-				arr = [ 1, 2, 3 ];
-			});
-			// roda todas as vezes, depois de CADA bloco
-			afterEach(function() {});
+import { expect } from 'chai';
+import { sum, sub, mult, div } from '../src/Mod#4 - Concept and Practice/calc';
 
-			it('should have a size of 4 when push another value to the array', function() {
-				arr.push(4);
-				console.log(arr.length);
-			});
+describe('Calc', () => {
+    describe('Sum', () => {
+        it('should return 4 when `sum(2,2)`', () => {
+            expect(sum(2,2)).to.be.equal(4)
+        })
+    })
+    
+    describe('Sub', () => {
+        it('should return 4 when `sub(2,6)`', () => {
+            expect(sub(6,2)).to.be.equal(4)
+        })
+    })
+    
+    describe('Mult', () => {
+        it('should return 4 when `sum(2,2)`', () => {
+            expect(mult(2,2)).to.be.equal(4)
+        })
+    })
 
-			it('should have a size of 2 when pop a value from the array', function() {
-				arr.pop();
-				console.log(arr.length);
-			});
+    describe('Div', function() {
+        it('should return 4 when `sum(16,4)`', function () {
+            expect(div(16,4)).to.be.equal(4)
+        })
 
-			it('should remove 3 when use pop in the array', function() {
-				console.log(arr.pop() === 3);
-			});
-		});
-	});
+        it('should return `Não é possível divisão por zero!` when divide by 0', function () {
+            expect(div(16,0)).to.be.equal(`Não é possível divisão por zero!`)
+        })
+    })
 });

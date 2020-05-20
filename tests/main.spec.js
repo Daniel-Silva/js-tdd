@@ -6,9 +6,25 @@ describe('Main', function() {
 				// entra de dados / método sum(2,2)
 				// espera retornar (4) => true
 				// ou (3) => broken test
+				throw new Error('just on error');
 			});
 		});
 
-		context('Case B', function() {});
+		context('Case B', function() {
+			it('should happen blablablah', function() {
+				// espera que aconteça
+				// entra de dados / método sum(2,2)
+				// espera retornar (4) => true
+				// ou (3) => broken test
+				throw new Error('just on error');
+			});
+
+			it('should happen mimimi', function() {
+				// espera que aconteça
+				// entra de dados / método sum(2,2)
+				// espera retornar (4) => true
+				// ou (3) => broken test
+			});
+		});
 	});
 });
